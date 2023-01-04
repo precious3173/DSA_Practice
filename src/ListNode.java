@@ -1,9 +1,7 @@
-class ListNode <E>{
-    ListNode<E> next;
-    ListNode<E> prev;
-    E data;
+class ListNode {
+    ListNode next;
+    // the linked needs a data and the data type can be a string, int and any data type, but we will be using an integer
+    int data;
 
-    public ListNode(E data){
-        this.data = data;
-    }
+
 }

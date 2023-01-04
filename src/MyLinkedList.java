@@ -1,16 +1,41 @@
 public class MyLinkedList <E>{
 
-    private ListNode<E> head;
-    private ListNode<E> tail;
-    private int size;
+    private ListNode head;
+    private ListNode tail;
+
+    private ListNode listNode;
+
+
+    public MyLinkedList(int data){
+
+        head = new ListNode();
+        listNode = new ListNode();
+
+        // the node will get what ever data that is passed
+           head.data  = data ;
+           head.next = null;
+
+           if(head == null){
+
+               head = listNode;
+           }
+           else{
+               ListNode n = head;
+
+               while(n.next != null){
+                  n = n.next;
+               }
+               n.next = listNode;
+           }
+
+    }
 
     public MyLinkedList(){
+        ListNode node = head;
 
-        size = 0;
-        head = new ListNode<E>(null);
-        tail = new ListNode<E>(null);
-
-           head.next  = tail;
-           tail.prev = head;
+        while (node.next != null){
+            System.out.println(node.data);
+            node= node.next;
+        }
     }
 }
