@@ -8,8 +8,8 @@ public class MyLinkedList <E>{
 
     public MyLinkedList(int data){
 
-        head = new ListNode();
-        listNode = new ListNode();
+        head = new ListNode(data);
+        listNode = new ListNode(data);
 
         // the node will get what ever data that is passed
            head.data  = data ;

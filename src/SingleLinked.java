@@ -27,7 +27,7 @@ class SingleLinked{
     }
     public void insertFirstLink(int data){
 
-      newLink = new ListNode();
+      newLink = new ListNode(data);
       newLink.next = head;
       head = newLink;
     }
