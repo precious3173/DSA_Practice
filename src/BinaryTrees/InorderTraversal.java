@@ -1,3 +1,5 @@
+package BinaryTrees;
+
 public class InorderTraversal {
 
     int key;

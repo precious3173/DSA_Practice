@@ -1,4 +1,11 @@
+import BinaryTrees.BinaryNode;
+import BinaryTrees.BinaryTree;
+import BinaryTrees.InorderTraversal;
+
 public class Main {
+
+    BinaryNode root;
+    public void  addNode(int key)
     public static void main(String[] args) {
 
      SingleLinked2 singleLinked2= new SingleLinked2();
@@ -37,5 +44,7 @@ public class Main {
         System.out.println(
                 "\nInorder traversal of binary tree is ");
         tree.printInorder();
+
+
     }
 }
