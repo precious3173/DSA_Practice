@@ -15,6 +15,6 @@ public class BinaryNode {
 
     public String toString (){
 
-        return name + "has a ${key}" + key ;
+        return name + "has a key" + key ;
     }
 }

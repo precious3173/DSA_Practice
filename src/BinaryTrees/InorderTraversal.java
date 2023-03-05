@@ -12,26 +12,3 @@ public class InorderTraversal {
     }
 }
 
-class BinaryTree{
-
-    InorderTraversal root;
-    BinaryTree(){
-        root = null;
-    }
-
-    // Given a binarytree, print its nodes using inorder method of traversing
-
-    void printInorder(InorderTraversal inorderTraversal){
-
-        if(inorderTraversal == null){
-            return;
-        }
-        printInorder(inorderTraversal.left);
-
-        System.out.print(inorderTraversal.key + " ");
-    }
-
-    void printInorder() {
-
-        printInorder(root); }
-}

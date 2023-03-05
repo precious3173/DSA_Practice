@@ -1,11 +1,11 @@
 import BinaryTrees.BinaryNode;
-import BinaryTrees.BinaryTree;
+import BinaryTrees.BinaryTree2P;
 import BinaryTrees.InorderTraversal;
 
 public class Main {
 
     BinaryNode root;
-    public void  addNode(int key)
+
     public static void main(String[] args) {
 
      SingleLinked2 singleLinked2= new SingleLinked2();
@@ -34,17 +34,16 @@ public class Main {
             }
         }
 
-        BinaryTree tree = new BinaryTree();
-        tree.root = new InorderTraversal(4);
-        tree.root.left = new InorderTraversal(3);
-        tree.root.right = new InorderTraversal(5);
-        tree.root.left.left = new InorderTraversal(1);
-        tree.root.left.right = new InorderTraversal(2);
+        BinaryTree2P binaryTree2P = new BinaryTree2P();
 
-        System.out.println(
-                "\nInorder traversal of binary tree is ");
-        tree.printInorder();
+        binaryTree2P.addNode(50, "Baby");
+        binaryTree2P.addNode(25, "Baby 2");
+        binaryTree2P.addNode(15, "Baby 3");
+        binaryTree2P.addNode(30, "Baby 4");
+        binaryTree2P.addNode(75, "Baby 5");
+        binaryTree2P.addNode(55, "Baby 6");
 
+        binaryTree2P.inOrderTraverseTree(binaryTree2P.root);
 
     }
 }
