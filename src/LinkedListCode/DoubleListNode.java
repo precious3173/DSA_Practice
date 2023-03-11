@@ -7,10 +7,16 @@ public class DoubleListNode {
 
     int data;
 
-    DoubleListNode(DoubleListNode next, DoubleListNode previous, int data){
+    DoubleListNode(int data){
 
-        this.next = next;
-        this.previous = previous;
+        this.next = null;
+        this.previous = null;
         this. data = data;
+    }
+
+    @Override public String toString(){
+
+        String a = Integer.toString(data);
+        return a;
     }
 }
