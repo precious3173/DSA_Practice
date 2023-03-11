@@ -1,6 +1,6 @@
 import BinaryTrees.BinaryNode;
 import BinaryTrees.BinaryTree2P;
-import BinaryTrees.InorderTraversal;
+import LinkedListCode.SingleLinked2;
 
 public class Main {
 

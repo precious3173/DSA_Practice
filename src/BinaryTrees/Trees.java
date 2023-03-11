@@ -1,3 +1,5 @@
+package BinaryTrees;
+
 public class Trees <E>{
 
     private E value;

@@ -1,3 +1,7 @@
+package LinkedListCode;
+
+import LinkedListCode.ListNode;
+
 class SingleLinked{
 
     ListNode head;

@@ -1,3 +1,7 @@
+package LinkedListCode;
+
+import LinkedListCode.ListNode;
+
 public class SingleLinked2 {
 
     ListNode head;
@@ -10,7 +14,7 @@ public class SingleLinked2 {
 
     public void display(int data){
 
-        //head = new ListNode(data);
+        //head = new LinkedListCode.ListNode(data);
 
         ListNode n = head;
         n.data = data;

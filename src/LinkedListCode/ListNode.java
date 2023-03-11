@@ -1,3 +1,5 @@
+package LinkedListCode;
+
 class ListNode {
     //next will be point to the next node in the singlelist
     ListNode next;

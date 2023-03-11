@@ -1,3 +1,7 @@
+package LinkedListCode;
+
+import LinkedListCode.ListNode;
+
 public class MyLinkedList <E>{
 
     private ListNode head;
