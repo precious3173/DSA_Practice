@@ -74,4 +74,36 @@ public class DoublyLinked {
 
        return data;
     }
+
+    public  int removeLastNode(){
+        if (isLinkedListEmpty()) throw new RuntimeException("Node is empty");
+
+        int data = tail.data;
+        tail = tail.previous;
+        --size;
+
+        if (isLinkedListEmpty()) head = null;
+
+        else tail.next = null;
+
+        return data;
+    }
+
+    public int removeNodeAtIndex(int index){
+       if(index <0 || index >= size ) throw new IllegalArgumentException();
+       int a;
+       DoubleListNode traversal;
+
+       if(index < size/2){
+           for (a = 0, traversal = head; a != index; a++){
+               traversal = traversal.next;
+           }
+       }else {
+           for (a = size-1, traversal = tail;  a != index; a --){
+               traversal = traversal.previous;
+           }
+       }
+
+       return index;
+    }
 }
