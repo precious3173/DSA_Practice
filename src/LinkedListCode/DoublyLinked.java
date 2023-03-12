@@ -41,5 +41,37 @@ public class DoublyLinked {
        size++;
     }
 
+    public void addToLastElement(int data){
+       if(isLinkedListEmpty()){
+           head = tail = new DoubleListNode(data);
+       }
+       else {
+           tail.next = new DoubleListNode(data);
+           tail = tail.next;
+       }
+       size++;
+    }
+    public int checkFirstNode(){
+       if (isLinkedListEmpty()) throw new RuntimeException("Node is empty");
+       return head.data;
+    }
 
+    public int checkLastNode(){
+       if (isLinkedListEmpty()) throw new RuntimeException("Node is empty");
+       return tail.data;
+    }
+
+    public  int removeFirstNode(){
+       if (isLinkedListEmpty()) throw new RuntimeException("Node is empty");
+
+       int data = head.data;
+       head = head.next;
+       --size;
+
+       if (isLinkedListEmpty()) tail = null;
+
+       else head.previous = null;
+
+       return data;
+    }
 }
