@@ -76,7 +76,7 @@ public class priorityQueue {
         heap.set(heapSize, elements.size());
     }
     else {
-        heap.add(elements);
+        heap.add(elements.size());
     }
     }
 
